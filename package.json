@@ -1,0 +1,37 @@
+{
+  "name": "SwitchHosts!",
+  "version": "3.2.0",
+  "description": "Switch hosts quickly!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "ENV=dev electron .",
+    "build": "gulp ver && webpack",
+    "pack": "gulp pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oldj/SwitchHosts.git"
+  },
+  "keywords": ["SwitchHosts!", "host"],
+  "author": "oldj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oldj/SwitchHosts/issues"
+  },
+  "homepage": "https://oldj.github.io/SwitchHosts/",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "codemirror": "^5.17.0",
+    "moment": "^2.14.1",
+    "node-notifier": "^4.6.1",
+    "react": "^15.3.1",
+    "react-addons-update": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "request": "^2.74.0"
+  },
+  "fet": {
+  	"type": "app",
+  	"icon": "./src/assets/logo_512.png"
+  }
+}
