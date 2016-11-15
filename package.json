@@ -31,7 +31,7 @@
     "request": "^2.74.0"
   },
   "fet": {
-  	"type": "app",
-  	"icon": "./src/assets/logo_512.png"
+    "type": "app",
+    "icon": "./src/assets/logo_512.png"
   }
 }
