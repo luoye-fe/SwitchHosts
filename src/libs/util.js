@@ -7,9 +7,10 @@
 'use strict';
 
 const fs = require('fs');
+const app = process.type === 'browser' ? require('electron').app : require('electron').remote.app;
 
 exports.getUserHome = function () {
-    return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
+    return app.getPath('home');
 };
 
 exports.isFile = function (p) {
