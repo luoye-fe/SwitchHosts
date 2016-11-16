@@ -1,6 +1,10 @@
 # SwitchHosts!
 
+## 新增内容 by [luoye](https://github.com/luoye-fe)
+
 Fork from [https://oldj.github.io/SwitchHosts/](https://oldj.github.io/SwitchHosts/)
+
+Make it become a plugin for [FET](https://github.com/gomeplusFED/FET)!
 
 Note: 
 
