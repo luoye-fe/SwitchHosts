@@ -2,15 +2,29 @@
 
 Fork from [https://oldj.github.io/SwitchHosts/](https://oldj.github.io/SwitchHosts/)
 
-```bash
-# pull origin code 
-git pull https://github.com/oldj/SwitchHosts master
+Note: 
 
-# pack for FET
-npm run fet
+* pull latest source code.
 
-# 
-```
+    ```bash
+    git pull https://github.com/oldj/SwitchHosts master
+    ```
+
+* modify function `getUserHome` in `app/src/libs/util.js`. (If app instance running in another electron instance, `process.env` is losed, so fix it.)
+
+* copy some files from source code to `fet/dist` and modify it slightly, such as `index.html`  `src/`  `main.js`.
+
+* build static source code.
+
+    ```bash
+    cd fet && npm run fet
+    ```
+
+* push to fet branch
+
+    ```bash
+    git subtree push -P fet/dist origin fet
+    ```
 
 Homepage: [https://oldj.github.io/SwitchHosts/](https://oldj.github.io/SwitchHosts/)
 
